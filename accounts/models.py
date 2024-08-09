@@ -20,7 +20,7 @@ class Product(models.Model):
         ('Out Door', 'Out Door'),
     )
     name = models.CharField(max_length=200, null=True)
-    price = models.FileField(null=True)
+    price = models.FloatField(null=True)
     category = models.CharField(max_length=200, null=True, choices=CATEGORY)
     description = models.CharField(max_length=200, null=True)
     date_created = models.DateTimeField(auto_now_add=True, null=True)
